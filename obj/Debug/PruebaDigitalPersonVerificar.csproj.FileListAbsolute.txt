@@ -97,3 +97,4 @@ C:\Users\Personal\Desktop\VerificarJorge\VerificarHuella\obj\Debug\PruebaDigital
 C:\Users\Personal\Desktop\VerificarJorge\VerificarHuella\obj\Debug\PruebaDi.03D9300B.Up2Date
 C:\Users\Personal\Desktop\VerificarJorge\VerificarHuella\obj\Debug\PruebaDigitalPersonVerificar.exe
 C:\Users\Personal\Desktop\VerificarJorge\VerificarHuella\obj\Debug\PruebaDigitalPersonVerificar.pdb
+C:\Users\Personal\Desktop\VerificarJorge\VerificarHuella\obj\Debug\PruebaDigitalPerson.CaptureForm.resources
