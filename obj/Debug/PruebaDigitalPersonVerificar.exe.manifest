@@ -342,14 +342,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PruebaDigitalPersonVerificar.exe" size="57328">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PruebaDigitalPersonVerificar.exe" size="59376">
       <assemblyIdentity name="PruebaDigitalPersonVerificar" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fjQ/jfnGqOKjGFtiRmK/booQoykIa0K96v4qABYt+4w=</dsig:DigestValue>
+        <dsig:DigestValue>0ZSDKK1IIn+yXTCt+UiQ0JN1A1LBG5lt9UL13WzHwfI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -533,13 +533,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ILLink\ILLink.Descriptors.LibraryBuild.xml" size="297" writeableType="applicationData">
+  <file name="ILLink\ILLink.Descriptors.LibraryBuild.xml" size="305" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Y5zwhnDDzpzALvoVcY6dS+NDuwAJRRKYtQV/l6MvAwk=</dsig:DigestValue>
+      <dsig:DigestValue>N2JrA3aQ6Dz+zu7qnpXGkJK2y5yMkv1DShvXwhW0sH0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="prueba_huella.sql.mdf" size="8388608" writeableType="applicationData">
@@ -560,13 +560,13 @@
       <dsig:DigestValue>Ak7/xRQEEGB++Grts6iZvvZCk/ZTlRvG5thg9T3NvWo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="PruebaDigitalPersonVerificar.exe.config" size="4881">
+  <file name="PruebaDigitalPersonVerificar.exe.config" size="4962">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GM7S50VhSuzO/ULiacraJLfGcooTyREDUfFmXQ0UIng=</dsig:DigestValue>
+      <dsig:DigestValue>aSNFTxj+rvkRXug+OH1VnLdm71VyQrSc1yHAztKEKvo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

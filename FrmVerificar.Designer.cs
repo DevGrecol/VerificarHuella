@@ -1,4 +1,4 @@
-﻿namespace PruebaDigitalPerson
+﻿namespace PruebaDigitalPersonRegistrar
 {
     partial class frmVerificar
     {

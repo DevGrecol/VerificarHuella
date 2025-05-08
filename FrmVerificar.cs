@@ -1,18 +1,16 @@
-﻿using PruebaDigitalPerson;
-using PruebaDigitalPerson.Conexion;
-using System;
+﻿using System;
 using System.IO;
 using DPFP;
 using DPFP.Verification;
 using Npgsql;
 using System.Windows.Forms;
 using static System.Data.Entity.Infrastructure.Design.Executor;
-using Antlr4.StringTemplate;
-using Org.BouncyCastle.Bcpg.Sig;
-using static DPFP.Verification.Verification;
-using static NPOI.HSSF.Util.HSSFColor;
+using System.Drawing.Drawing2D;
+using System.Drawing;
+using PruebaDigitalPerson.Conexion;
+using PruebaDigitalPerson;
 
-namespace PruebaDigitalPerson
+namespace PruebaDigitalPersonRegistrar
 {
     public partial class frmVerificar : CaptureForm
     {
@@ -54,11 +52,9 @@ namespace PruebaDigitalPerson
 
                 try
                 {
+                    string query = "SELECT id_cliente, nombres, apellidos, codigo_ver, MeñiqueIzquierdo, AnularIzquierdo, MedioIzquierdo, IndiceIzquierdo, PulgarIzquierdo, PulgarDerecho, IndiceDerecho, MedioDerecho, AnularDerecho, MeñiqueDerecho , numero_identificacion FROM public.clientes order by id_cliente desc;";
 
-                    //string query = "SELECT nombre, huella, FROM clientes";
-                    string query = "SELECT id_cliente, nombres, apellidos, codigo_ver, huella , numero_identificacion FROM public.clientes order by id_cliente desc;";
-
-                    using (NpgsqlConnection conn = new NpgsqlConnection(contexto.connectionString)) 
+                    using (NpgsqlConnection conn = new NpgsqlConnection(contexto.connectionString))
                     {
                         conn.Open();
                         using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
@@ -67,78 +63,74 @@ namespace PruebaDigitalPerson
                             {
                                 while (reader.Read())
                                 {
+                                    bool algunaHuellaAsignada = false;
 
-                                    Boolean validador = reader.IsDBNull(4) ? false : true;
-
-                                    if (validador == false)
+                                    // Iterar a través de las 10 columnas de huellas
+                                    for (int i = 4; i < 14; i++) // Columnas de MeñiqueIzquierdo a MeñiqueDerecho
                                     {
-                                        //MessageBox.Show("La huella no esta asignada a ningun cliente");
+                                        if (!reader.IsDBNull(i))
+                                        {
+                                            algunaHuellaAsignada = true;
+                                            byte[] huellaBytes = (byte[])reader[i];
+                                            stream = new MemoryStream(huellaBytes);
+                                            template = new DPFP.Template(stream);
 
+                                            Verificator.Verify(features, template, ref result);
+
+                                            if (result.Verified)
+                                            {
+                                                Random rnd = new Random();
+                                                int cardPago = rnd.Next(1, 1000);
+                                                string mostrarCardPago = cardPago.ToString();
+
+                                                if (cardPago >= 1 && cardPago <= 9)
+                                                {
+                                                    labelNumeroPago.Text = "00" + mostrarCardPago;
+                                                }
+                                                else if (cardPago >= 10 && cardPago <= 99)
+                                                {
+                                                    labelNumeroPago.Text = "0" + mostrarCardPago;
+                                                }
+                                                else
+                                                {
+                                                    labelNumeroPago.Text = mostrarCardPago;
+                                                }
+
+                                                int nume = (int)reader.GetValue(0);
+                                                int update = this.actualizarCodigo(cardPago, nume);
+
+                                                txtEncontradoNombre.Text = reader.GetValue(1).ToString();
+                                                txtEncontradoApellido.Text = reader.GetValue(2).ToString();
+                                                txtEncontradoCedula.Text = reader.GetValue(14).ToString();
+
+                                                MakeReport("La huella dactilar pertenece al cliente. " + reader.GetValue(1).ToString() + " " + reader.GetValue(2).ToString());
+                                                huellaVerificada = true;
+                                                goto VerificacionExitosa; // Salir del bucle si se encuentra una coincidencia
+                                            }
+                                        }
+                                    }
+
+                                    if (!algunaHuellaAsignada)
+                                    {
                                         txtEncontradoNombre.Text = " ";
                                         txtEncontradoApellido.Text = " ";
                                         txtEncontradoCedula.Text = " ";
                                         labelNumeroPago.Text = "XXX";
-                                        //break;
+                                        // Puedes decidir si quieres mostrar un mensaje aquí por cada cliente sin huellas asignadas.
                                     }
-                                    else
-                                    {
-                                        byte[] huellaBytes = (byte[])reader["huella"];
-                                        stream = new MemoryStream(huellaBytes);
-                                        template = new DPFP.Template(stream);
+                                }
 
-                                        Verificator.Verify(features, template, ref result);
-                                        UpdateStatus(result.FARAchieved);
-
-                                        if (result.Verified)
-                                        {
-
-                                            if (validador == false)
-                                            {
-                                                MessageBox.Show("La huella no esta asignada a ningun cliente");
-                                                break;
-                                            }
-                                            else
-                                            {
-
-
-                                                //se toma el numero de indentificacion de la consulta
-                                                string numeroIdentificacion = reader.GetValue(5).ToString();
-
-                                                //se envia el numero de indentificacion para actualizar las reyes y obtener el codigo
-                                                string code = this.actualizarReyesPagar(numeroIdentificacion);
-
-                                                //id del cliente para consultas
-                                                int id_cliente = (int)reader.GetValue(0);
-
-                                                
-                                                //int codigoVerifica = Convert.ToInt32(this.codigoVerifica(id_cliente));
-
-                                                int update = this.actualizarCodigo(Convert.ToInt32(code), id_cliente);
-
-                                                txtEncontradoNombre.Text = reader.GetValue(1).ToString();
-
-                                                txtEncontradoApellido.Text = reader.GetValue(2).ToString();
-
-                                                txtEncontradoCedula.Text = reader.GetValue(5).ToString();
-
-                                                //mostramos el codigo para pagar las reyes
-                                                labelNumeroPago.Text = code;
-
-                                                MakeReport("La huella dactilar pertenece al cliente. " + reader.GetValue(1).ToString() + " " + reader.GetValue(2).ToString());
-                                                huellaVerificada = true;
-                                                break;
-
-                                            }
-                                        }
-                                    }
+                            VerificacionExitosa:
+                                if (!huellaVerificada)
+                                {
+                                    MakeReport("La huella dactilar NO fue encontrada en la base de datos.");
+                                    txtEncontradoNombre.Text = " ";
+                                    txtEncontradoApellido.Text = " ";
+                                    txtEncontradoCedula.Text = " ";
+                                    labelNumeroPago.Text = "XXX";
                                 }
                             }
                         }
-                    }
-
-                    if (!huellaVerificada)
-                    {
-                        MakeReport("La huella dactilar NO fue encontrada en la base de datos.");
                     }
                 }
                 catch (Exception ex)
@@ -170,10 +162,10 @@ namespace PruebaDigitalPerson
         }
 
 
-        public int actualizarCodigo(int codigo , int id_cliente) 
+        public int actualizarCodigo(int codigo, int id_cliente)
         {
 
-            
+
             using (NpgsqlConnection connection = new NpgsqlConnection(contexto.connectionString))
             {
                 try
@@ -182,8 +174,7 @@ namespace PruebaDigitalPerson
 
                     //string sql = "INSERT INTO empleados (nombre, huella) VALUES (@nombre, @huella)";
 
-                    string sql = "UPDATE clientes SET codigo_ver = "+ codigo + " WHERE id_cliente= "+ id_cliente + "";
-
+                    string sql = "UPDATE clientes SET codigo_ver = " + codigo + " WHERE id_cliente= " + id_cliente + "";
 
                     using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
                     {
@@ -194,14 +185,14 @@ namespace PruebaDigitalPerson
                 catch (NpgsqlException ex)
                 {
 
-                    Console.WriteLine("Error de PostgreSQL: " + ex.Message);
+                    Show("Error de PostgreSQL: " + ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Information, Color.LightCoral, Color.IndianRed, Color.White);
 
                     throw;
                 }
                 catch (Exception ex)
                 {
 
-                    Console.WriteLine("Error al guardar cliente: " + ex.Message);
+                    Show("Error al guardar cliente: " + ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Information, Color.LightCoral, Color.IndianRed, Color.White);
 
                     throw;
                 }
@@ -211,81 +202,154 @@ namespace PruebaDigitalPerson
 
         }
 
-        public string codigoVerifica(int id_cliente)
+        private void txtEncontradoNombre_TextChanged(object sender, EventArgs e)
         {
-
-           
-            using (NpgsqlConnection connection = new NpgsqlConnection(contexto.connectionString))
-            {
-
-                using (var cmd = connection.CreateCommand())
-                {
-                    connection.Open();
-
-                    cmd.CommandText = "select sr.codigo_very from sorteos_reyes as sr join reyes as r on r.id_rey = sr.id_rey where r.id_cliente = "+id_cliente+" and sr.estado_pago_rey = 'N' limit 1";
-                    //cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
-           
-                    //cmd.Parameters.AddWithValue("@apellidos", cliente.apellidos);
-
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-
-                            return reader.GetString(0);
-                        }
-                        else
-                        {
-                            
-                            return "0";
-
-                        }
-                    }
-                }
-
-            }
-        }
-
-        public string actualizarReyesPagar(string numdocumento) 
-        {
-
-            string codigo = new Random().Next(1, 10000).ToString();
-
-            string fechaActual = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
-            using (NpgsqlConnection connection = new NpgsqlConnection(contexto.connectionString))
-            {
-                try
-                {
-                    connection.Open();
-
-                    string sql = @"UPDATE SORTEOS_REYES AS SR SET codigo_very= '"+codigo+ "' FROM REYES R INNER JOIN CLIENTES C ON C.ID_CLIENTE = R.ID_CLIENTE WHERE C.NUMERO_IDENTIFICACION = '"+numdocumento+"' AND SR.ESTADO_PAGO_REY = 'N' AND SR.ID_REY = R.ID_REY";
-
-                    using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
-                    {
-                        command.Parameters.AddWithValue("@codigo_ver", codigo);
-                        command.ExecuteNonQuery();
-                    }
-                }
-                catch (NpgsqlException ex)
-                {
-
-                    Console.WriteLine("Error de PostgreSQL: " + ex.Message);
-
-                    throw;
-                }
-                catch (Exception ex)
-                {
-
-                    Console.WriteLine("Error al guardar cliente: " + ex.Message);
-
-                    throw;
-                }
-            }
-
-            return codigo;
 
         }
 
+
+        public static new Color ColorIntermedio(Color color1, Color color2)
+        {
+            return Color.FromArgb(
+                (color1.R + color2.R) / 2,
+                (color1.G + color2.G) / 2,
+                (color1.B + color2.B) / 2);
+        }
+
+        public static new Point _mouseDownPoint = Point.Empty;
+
+        public static new DialogResult Show(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon, Color color1, Color color2, Color foreColor)
+        {
+            Form messageBoxForm = new Form
+            {
+                Text = caption,
+                ForeColor = foreColor,
+                StartPosition = FormStartPosition.CenterScreen,
+                Size = new Size(400, 200),
+                FormBorderStyle = FormBorderStyle.None,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
+
+            Panel customTitleBar = new Panel
+            {
+                Dock = DockStyle.Top,
+                Height = 30,
+                BackColor = color1,
+                ForeColor = foreColor,
+            };
+            messageBoxForm.Controls.Add(customTitleBar);
+
+            Label titleLabel = new Label
+            {
+                Text = caption,
+                AutoSize = true,
+                TextAlign = ContentAlignment.MiddleLeft,
+                ForeColor = Color.Black,
+                Font = new Font("Calibri", 12, FontStyle.Bold),
+                BackColor = Color.Transparent,
+                Location = new Point(5, 5)
+            };
+            customTitleBar.Controls.Add(titleLabel);
+
+
+            customTitleBar.MouseDown += (sender, e) =>
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    _mouseDownPoint = new Point(e.X, e.Y);
+                }
+            };
+
+            customTitleBar.MouseMove += (sender, e) =>
+            {
+                if (_mouseDownPoint != Point.Empty)
+                {
+                    messageBoxForm.Location = new Point(
+                        messageBoxForm.Left + (e.X - _mouseDownPoint.X),
+                        messageBoxForm.Top + (e.Y - _mouseDownPoint.Y));
+                }
+            };
+
+            customTitleBar.MouseUp += (sender, e) =>
+            {
+                _mouseDownPoint = Point.Empty;
+            };
+
+            Button closeButton = new Button
+            {
+                Text = "X",
+                AutoSize = false,
+                Width = 20,
+                Height = 22,
+                ForeColor = Color.Black,
+                BackColor = Color.Transparent,
+                FlatStyle = FlatStyle.Flat,
+                FlatAppearance = { BorderSize = 0 },
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                Location = new Point(customTitleBar.Width - 25, (customTitleBar.Height - 22) / 2),
+                Font = new Font("Arial", 12, FontStyle.Bold)
+            };
+            closeButton.Click += (sender, e) =>
+            {
+                messageBoxForm.DialogResult = DialogResult.Cancel;
+                messageBoxForm.Close();
+            };
+            customTitleBar.Controls.Add(closeButton);
+            customTitleBar.Width = messageBoxForm.ClientSize.Width;
+            messageBoxForm.Resize += (sender, e) =>
+            {
+                customTitleBar.Width = messageBoxForm.ClientSize.Width;
+                closeButton.Left = customTitleBar.Width - closeButton.Width - 5;
+            };
+
+
+
+            messageBoxForm.Tag = new Tuple<Color, Color>(color1, color2);
+
+
+            messageBoxForm.Paint += (sender, e) =>
+            {
+                Form form = (Form)sender;
+                if (form.Tag is Tuple<Color, Color> colors)
+                {
+                    using (LinearGradientBrush brush = new LinearGradientBrush(form.ClientRectangle, colors.Item1, colors.Item2, LinearGradientMode.Vertical))
+                    {
+                        e.Graphics.FillRectangle(brush, form.ClientRectangle);
+                    }
+                }
+            };
+
+            Label messageLabel = new Label
+            {
+                Text = text,
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.MiddleCenter,
+                ForeColor = Color.Black,
+                Font = new Font("Calibri", 16),
+                BackColor = Color.Transparent,
+                Padding = new Padding(0, customTitleBar.Height, 0, 40)
+            };
+            messageBoxForm.Controls.Add(messageLabel);
+
+
+            Color buttonBackColor = ColorIntermedio(color1, color2);
+
+            Button okButton = new Button
+            {
+                Text = "OK",
+                DialogResult = DialogResult.OK,
+                Font = new Font("Calibri", 16),
+                ForeColor = Color.Black,
+                BackColor = buttonBackColor,
+                FlatStyle = FlatStyle.Flat,
+                FlatAppearance = { BorderSize = 0 },
+                Dock = DockStyle.Bottom,
+                Height = 40
+            };
+            messageBoxForm.Controls.Add(okButton);
+
+            return messageBoxForm.ShowDialog();
+        }
     }
 }

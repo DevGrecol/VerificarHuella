@@ -1,49 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\",
+  "WorkspaceRootPath": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\frmverificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:frmverificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\frmverificar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:frmverificar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|c:\\users\\personal\\desktop\\verificarjorge\\verificarhuella\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\frmverificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|c:\\users\\personal\\desktop\\nosev\\verificarhuella\\frmverificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:frmverificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\conexion\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\frmverificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:frmverificar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\capturarhuella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:capturarhuella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\capturarhuella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:capturarhuella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\capturarhuella.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:capturarhuella.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\captureform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:captureform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:captureform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\frmverificar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:frmverificar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\conexion\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:conexion\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\conexion\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:conexion\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\frmregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:frmregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\frmregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonVerificar.csproj|solutionrelative:frmregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonRegistrar.csproj|C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonRegistrar.csproj|C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A663E45C-A898-4CDD-9BA8-86D04E6321B4}|PruebaDigitalPersonRegistrar.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,138 +82,141 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CaptureForm.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\CaptureForm.cs",
-              "RelativeDocumentMoniker": "CaptureForm.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\CaptureForm.cs",
-              "RelativeToolTip": "CaptureForm.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAIAxwLMAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CapturarHuella.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CapturarHuella.Designer.cs",
+              "RelativeDocumentMoniker": "CapturarHuella.Designer.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CapturarHuella.Designer.cs",
+              "RelativeToolTip": "CapturarHuella.Designer.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA3wBoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T21:04:47.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CaptureForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\CaptureForm.cs",
-              "RelativeDocumentMoniker": "CaptureForm.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\CaptureForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CaptureForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T21:04:42.355Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Conexion\\Cliente.cs",
-              "RelativeDocumentMoniker": "Conexion\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Conexion\\Cliente.cs",
-              "RelativeToolTip": "Conexion\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:52:58.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmRegistrar.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmRegistrar.cs",
-              "RelativeDocumentMoniker": "FrmRegistrar.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmRegistrar.cs",
-              "RelativeToolTip": "FrmRegistrar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:47:50.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FrmRegistrar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmRegistrar.cs",
-              "RelativeDocumentMoniker": "FrmRegistrar.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmRegistrar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FrmRegistrar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:47:49.07Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmVerificar.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmVerificar.Designer.cs",
-              "RelativeDocumentMoniker": "FrmVerificar.Designer.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmVerificar.Designer.cs",
-              "RelativeToolTip": "FrmVerificar.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:35:01.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T22:57:29.189Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "CaptureForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CaptureForm.Designer.cs",
+              "RelativeDocumentMoniker": "CaptureForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CaptureForm.Designer.cs",
+              "RelativeToolTip": "CaptureForm.Designer.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAADwv5sAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:56:18.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CapturarHuella.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CapturarHuella.cs",
+              "RelativeDocumentMoniker": "CapturarHuella.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CapturarHuella.cs",
+              "RelativeToolTip": "CapturarHuella.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAkwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:53:28.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CaptureForm.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CaptureForm.cs",
+              "RelativeDocumentMoniker": "CaptureForm.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CaptureForm.cs",
+              "RelativeToolTip": "CaptureForm.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAYwLkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:51:29.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CaptureForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CaptureForm.cs",
+              "RelativeDocumentMoniker": "CaptureForm.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CaptureForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CaptureForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:04:42.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CapturarHuella.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CapturarHuella.cs",
+              "RelativeDocumentMoniker": "CapturarHuella.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\CapturarHuella.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapturarHuella.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:50:58.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmVerificar.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\FrmVerificar.Designer.cs",
+              "RelativeDocumentMoniker": "FrmVerificar.Designer.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\FrmVerificar.Designer.cs",
+              "RelativeToolTip": "FrmVerificar.Designer.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAqwIgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:35:01.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FrmVerificar.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmVerificar.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\FrmVerificar.cs",
               "RelativeDocumentMoniker": "FrmVerificar.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmVerificar.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\FrmVerificar.cs",
               "RelativeToolTip": "FrmVerificar.cs",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAqwBwBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAIwFsBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T20:33:49.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FrmVerificar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmVerificar.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\FrmVerificar.cs",
               "RelativeDocumentMoniker": "FrmVerificar.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\FrmVerificar.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\FrmVerificar.cs [Dise\u00F1o]",
               "RelativeToolTip": "FrmVerificar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:33:48.057Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-07T20:33:48.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Program.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:27:38.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Conexion\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "Conexion\\ConexionBD.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Conexion\\ConexionBD.cs",
-              "RelativeToolTip": "Conexion\\ConexionBD.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAAAOgAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:23:18.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T20:27:38.67Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ConexionBD.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\Conexion\\ConexionBD.cs",
+              "RelativeDocumentMoniker": "Conexion\\ConexionBD.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\Conexion\\ConexionBD.cs",
+              "RelativeToolTip": "Conexion\\ConexionBD.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAAAOgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:23:18.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Personal\\Desktop\\VerificarJorge\\VerificarHuella\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Personal\\Desktop\\noseV\\VerificarHuella\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "Properties\\AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
